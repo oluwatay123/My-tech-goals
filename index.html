@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-title">
+                <h1 class="title">My Tech Goals</h1>
+            </div>
+            <div class="hero-content">
+                <!-- Profile Image -->
+
+                <img src="./images/imageProfile.jpg" alt="Profile Picture" class="profile-img"
+                    data-testid="slackProfilePicture">
+                <!-- Information Grid -->
+
+                <div class="info">
+                    <div class="info-item">
+                        <p data-testid="slackDisplayName" class="details">CyberspaceX</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="./images/email.svg" alt="Email Icon" class="info-icon">
+                        <p data-testid="slackEmail" class="details">oluwatayodavid273@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="./images/Time.png" alt="Time Icon" class="info-icon">
+                        <p data-testid="currentTimeUTC" class="details"></p>
+                    </div>
+                    <div class="info-item">
+                        <img src="./images/day.svg" alt="Day Icon" class="info-icon">
+                        <p data-testid="currentDay" class="details"></p>
+                    </div>
+                </div>
+                <pre id="image-size-info"></pre>
+            </div>
+        </div>
+    </section>
+    <!-- Goals Section -->
+    <section class="goals">
+        <div class="container">
+            <div class="goal-card" data-testid="goal1">
+                <div class="icon"><img src="./images/fullStack.svg" alt="fullsatck" height="50px"></div>
+                <h3>Goal 1</h3>
+                <p>Become a fullstack developer</p>
+            </div>
+            <div class="goal-card" data-testid="goal2">
+                <div class="icon"><img src="./images/Tech Startup.png" alt="fullsatck" height="50px"></div>
+                <h3>Goal 2</h3>
+                <p>Consider a tech startup</p>
+            </div>
+            <div class="goal-card" data-testid="goal3">
+                <div class="icon"><img src="./images/grow.png" alt="fullsatck" height="50px"></div>
+                <h3>Goal 3</h3>
+                <p>Help others grow</p>
+            </div>
+        </div>
+    </section>
+    <!-- Links Section -->
+    <section class="links">
+        <div class="container">
+            <a href="https://hng.tech/learn" class="link" data-testid="hngLink">HNG Learn</a>
+            <a href="https://keyword.dog" class="link" data-testid="keywordLink">Keyword Dog</a>
+            <a href="https://scrapeanyweb.site" class="link" data-testid="scrapeanywebLink">Scrape Any Web</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

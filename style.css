@@ -1,0 +1,137 @@
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.title{
+    font-size: 5rem;
+    font-weight: 700;
+  
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0;
+    background-color: #0056b3;
+    color: white;
+}
+
+.hero-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-right: 2em;
+    width:300px;
+     height:auto;
+    margin: 0 10px 0 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 1em;
+    width: 24px;
+    height: 24px;
+}
+
+.details {
+    margin: 0;
+}
+
+.goals .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 6em;
+    padding: 3em ;
+}
+
+.goal-card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.goal-card:hover {
+    transform: scale(1.05);
+}
+
+.goal-card .icon {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.links .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.link {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.link:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-grid {
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+
+    .profile-img {
+        margin-bottom: 1em;
+
+    }
+    .hero-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        margin-bottom: 1em;
+    }
+}
